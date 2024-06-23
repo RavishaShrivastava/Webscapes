@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health care survey</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url('medio.png');
+            color: black;
+            background-size: 100% 100%;
+        }
+        h1{
+             font-family: 'Times New Roman';
+        }
+        #forms{
+            background-color: white;
+            margin-right: 300px;
+            margin-left: 300px;
+            padding: 20px;
+        }
+        .inputs,
+        .new,
+        .choices, 
+        .like,
+        .submit1{
+            border: 1.5px solid #777;
+            border-radius: 2px;
+            font-family: serif;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        div{
+            padding-left: 24px;
+            padding-right: 27px;
+        }
+        .choices1,
+        .likes{
+            text-align: left;
+        }
+        .choices1 input[type="radio"],
+        .choices1 input[type="checkbox"]{
+            text-align: left;
+            display: inline-block;
+        }        
+        textarea{
+            padding: 10px;
+            width: 95%;
+        }
+        button{
+            text-align: center;
+            background-color: lightcyan;
+            font-size: 50;
+            font-family: "Galliard BT";
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 100px;
+            padding-right: 100px;
+            font-size: larger;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>HEALTH SURVEY FORM</h1>
+    <p><em>Lets us know about your health</em>&#128151</p>
+
+     <div id="forms">
+        <form>
+            <div class="inputs">
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" placeholder="Enter your first name"><br><br>
+            <label for="lname">Last name  :</label>
+            <input type="text" id="lname" placeholder="Enter your last name"><br><br>
+            <label for="email">E-mail id  :</label>
+            <input type="'email" id="email" placeholder="Enter your email id"><br><br>
+            
+           </div>
+
+            <div class="new">
+                <div style="display: flex; justify-content: space-between;">
+                    <div >
+                      <label for="gender">Gender:</label>
+                      <select id="gender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="age">Age:</label>
+                      <select id="age">
+                        <option value="">Select Age</option>
+                        <option value="18-24">18-24</option>
+                        <option value="25-34">25-34</option>
+                        <option value="35-44">35-44</option>
+                        <option value="45-54">45-54</option>
+                        <option value="55-64">55-64</option>
+                        <option value="65+">65+</option>
+                      </select>
+                    </div>
+                  </div>
+            </div>
+        <div class="choices">
+            <div class="choices1">
+            <label for="diseases">What kind of disease you have?</label><br><br>
+            <input type="checkbox" id="disease">No diseases</input><br><br>
+            <input type="checkbox" id="disease">Blood pressure</input><br><br>
+            <input type="checkbox" id="diseases">Heart Problem</input><br><br>
+            <input type="checkbox" id="disease">Kidney Stones</input><br><br>
+            <input type="checkbox" id="disease">Other </input>
+            <input type="text" id="disease" placeholder="Type your disease"><br><br><br>
+            <label for="recommed">Are you taking medications?</label><br><br>
+            <input type="radio" id="recommed-1" name="recommed">Yes, I am taking medications</input><br><br>
+            <input type="radio" id="recommed-2" name="recommed">No, I am not taking medications</input><br><br><br>
+            
+            <label for="recommed1"> Have you taken health insurance</label><br><br>
+            <input type="radio" id="recommed-1" name="recommed1">Yes, I have taken insurance</input><br><br>
+            <input type="radio" id="recommed-2" name="recommed1">No, I haven't taken insurance</input><br><br><br>
+            <label for="month-year">Your last check-up :</label>
+            <input type="month" id="month-year" name="month-year" required><br><br><br>
+            <label for="comments">Do you have any comments?</label><br><br>
+            <textarea name="comments" id="comments" placeholder="Type you comments" ></textarea><br><br>
+        
+            </div>
+        </div>
+        <div class="submit1">
+        <button type="submit" value="submit">
+            Submit
+        </button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
